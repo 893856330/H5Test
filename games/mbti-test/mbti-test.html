@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="MBTI 职业性格测试共 93 题，基于四个维度计算人格类型，并跳转到对应的人格解析页面。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="MBTI,MBTI测试,职业性格测试,人格测试">
+    <link rel="canonical" href="https://mbti.msktmi.com/mbti-test.html">
+    <title>MBTI 职业性格测试 - 93 题</title>
+    <link rel="shortcut icon" href="./static/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./static/css/site.css" />
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/svgcheckbx.css">
+    <script type="text/javascript" src="./static/js/vendor/jquery-3.7.1.min.js"></script>
+    <script src="./static/js/vendor/bootstrap.min.js"></script>
+    <script src="./static/js/common/scoring.js"></script>
+    <script src="./static/js/pages/mbti-test.js"></script>
+    <script src="./static/js/common/project-info.js"></script>
+    <style>
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .questionbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 测试页只承载导航和题目容器，题目内容由 JS 动态生成。 -->
+    <div class="navbar navbar-default" style="margin-bottom: 10em;">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="./index.html" class="navbar-brand">MBTI</a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main"
+                    aria-label="切换导航菜单">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="./personality-types.html">十六种人格简介</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="questionbox">
+            <!-- JS 会把 questions.json 渲染成一题一屏的单选表单。 -->
+            <div class="flexWidth" id="mbtiquestion">
+                <!-- topic -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

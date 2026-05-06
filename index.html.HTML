@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 核心：让网页在手机上自适应 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>我的游戏枢纽 | My Game Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>🎮 我的游戏枢纽</h1>
+        <p>轻量级网页游戏集散地</p>
+    </header>
+
+    <main class="container">
+        <!-- 模块一：文字与模拟类 -->
+        <section class="game-module">
+            <h2 class="module-title">📜 文字 & 模拟游戏</h2>
+            <div class="card-grid">
+                <!-- 游戏卡片 1 -->
+                <div class="game-card" onclick="goToGame('mbti-test')">
+                    <div class="card-icon">🧠</div>
+                    <div class="card-info">
+                        <h3>MBTI 性格测试</h3>
+                        <p>探索你的真实人格</p>
+                    </div>
+                </div>
+                <!-- 游戏卡片 2 -->
+                <div class="game-card" onclick="goToGame('life-simulator')">
+                    <div class="card-icon">👶</div>
+                    <div class="card-info">
+                        <h3>人生重开模拟器</h3>
+                        <p>这垃圾人生一秒也不想待了</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 模块二：经典休闲类 -->
+        <section class="game-module">
+            <h2 class="module-title">🕹️ 经典休闲游戏</h2>
+            <div class="card-grid">
+                <!-- 游戏卡片 3 -->
+                <div class="game-card" onclick="goToGame('tetris')">
+                    <div class="card-icon">🧱</div>
+                    <div class="card-info">
+                        <h3>俄罗斯方块</h3>
+                        <p>经典消除，挑战极限</p>
+                    </div>
+                </div>
+                <!-- 游戏卡片 4 -->
+                <div class="game-card" onclick="goToGame('match-3')">
+                    <div class="card-icon">🍬</div>
+                    <div class="card-info">
+                        <h3>开心消消乐</h3>
+                        <p>休闲解压必备</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 我的游戏枢纽 | 持续更新中...</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
