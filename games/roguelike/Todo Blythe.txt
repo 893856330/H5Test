@@ -1,0 +1,4 @@
+implement temporary map with collisions and camera movement [DONE]
+fix scaling [DONE]
+do map random gen
+create starting area
